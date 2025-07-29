@@ -171,7 +171,7 @@ li, p {
     }
 
     a {
-        width: 20vw;
+        width: fit-content;
     }
 
     .titulo {
@@ -192,7 +192,12 @@ li, p {
     }
 
     .contenedor div {
-        height: 20vh;
+        height: 25vh;
+    }
+
+    .contenedor div a {
+        bottom: 5%;
+        color: #000;
     }
 }
 
@@ -222,9 +227,16 @@ li, p {
         width: 80vw;
         border: .2vw solid #000;
         border-radius: 2.5vw;
-        
         padding: 1vh 4vw ;
         height: fit-content;
+    }
+    .contenedor div {
+        height: 25vh;
+    }
+
+    .contenedor div a {
+        bottom: 5%;
+        color: #000;
     }
     
 }
@@ -232,6 +244,10 @@ li, p {
 @media (min-width: 768px) and (max-width: 1200px) {
     body {
         overflow-x:hidden ;
+    }
+
+    header h1 {
+        font-size: 4rem;
     }
 
     .contenedor div {
