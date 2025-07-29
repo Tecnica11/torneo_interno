@@ -6,7 +6,7 @@ html, body {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -37,7 +37,7 @@ a {
 header h1{
     font-family: "Cinzel", serif;
     margin: 0;
-    font-size: 5vw;
+    font-size: 4.5rem;
     text-align: center;
     opacity: 0;
 }
@@ -69,6 +69,7 @@ main {
     justify-items: center;
     padding: 5vh 0 ;
     height: 60vh;
+    position: relative;
 }
 
 .contenedor div h1 {
@@ -79,7 +80,7 @@ main {
 .contenedor div a {
     display: flex;
     justify-content: center;
-    bottom: 30vh;
+    bottom: 30%;
     position: absolute;
 }
 
@@ -90,7 +91,7 @@ main {
 }
 
 #show1 {
-    transform: translateX(-50vw);
+    transform: translateX(-150vw);
     transition: transform 1s ease;
 }
 
@@ -101,7 +102,7 @@ main {
 }
 
 #show2 {
-    transform: translateY(100vh);
+    transform: translateY(200vh);
     transition: transform 1s ease 2s;
 }
 
@@ -111,7 +112,7 @@ main {
 }
 
 #show3 {
-    transform: translateX(50vw);
+    transform: translateX(150vw);
     transition: transform 1s ease 1s;
 }
 
@@ -119,7 +120,7 @@ main {
     opacity: 0;
     text-align: center;
     margin: 1vh 0;
-    font-size: 3.5vw;
+    font-size: 3.5rem;
     text-shadow: 0 0 1vw #fff;
     transition: opacity 1s ease-in 1s;
 }
@@ -132,7 +133,6 @@ main {
 .cont {
     display: flex;
     justify-content: center;
-    margin: 1vh 0;
     gap: 4.5vw;
 }
 
@@ -147,7 +147,7 @@ main {
 }
 
 li, p {
-    font-size: 1.5vw;
+    font-size: 1.2rem;
 }
 
 .cont div {
@@ -160,3 +160,86 @@ li, p {
 .show1 {
     transition: opacity 1s ease-in-out;
 }
+
+@media (max-width: 599px) {
+    body {
+        overflow-x:hidden;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    a {
+        width: 20vw;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .contenedor, .cont {
+        display: grid;
+        grid-template-rows:auto auto auto ;
+    }
+
+    .contenedor div, .cont div, .cont ul {
+        width: 80vw;
+        border: .2vw solid #000;
+        border-radius: 2.5vw;
+        height: fit-content;
+        padding: 1vh 6vw;
+    }
+
+    .contenedor div {
+        height: 20vh;
+    }
+}
+
+@media (min-width:600px) and (max-width: 768px) {
+    body {
+        overflow-x:hidden;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    a {
+        width: 15vw;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+
+    .contenedor, .cont {
+        display: grid;
+        grid-template-rows:1fr 1fr 1fr ;
+    }
+
+    .contenedor div, .cont div, .cont ul {
+        width: 80vw;
+        border: .2vw solid #000;
+        border-radius: 2.5vw;
+        
+        padding: 1vh 4vw ;
+        height: fit-content;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    body {
+        overflow-x:hidden ;
+    }
+
+    .contenedor div {
+        width: 28vw;
+        border: .2vw solid #000;
+        border-radius: 2.5vw;
+        justify-items: center;
+        padding: 5vh 0 ;
+        height: 40vh;
+    }
+  }
