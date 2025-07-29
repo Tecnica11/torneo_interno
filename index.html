@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneos TEC11</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DynaPuff:wght@400..700&family=Felipa&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="show1"><a id="titulo" href="index.html">Torneos Tecnica 11</a></h1>
+        <div class="show1">
+            <a class="voley" href="voley.html">Voley</a>
+            <a class="futbol" href="futbol.html">Futbol</a>
+            <a class="pinpon" href="pinpon.html">Ping Pong</a>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="voley">
+                <h1>Torneo de Voley</h1>
+                <a href="voley.html">Entrar</a>
+            </div>
+            <div class="futbol">
+                <h1>Torneo de Futbol</h1>
+                <a href="futbol.html">Entrar</a>
+            </div>
+            <div class="pinpon">
+                <h1>Torneo de Ping Pong</h1>
+                <a href="pinpon.html">Entrar</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+<script>
+    const show = document.querySelectorAll(".show1")
+    const contenedor = document.querySelector(".contenedor")
+
+    const delay = (ms) => {
+        return new Promise(resolve => setTimeout(resolve, ms))
+    }
+
+    const inicio = async () => {
+        await delay(100)
+        show.forEach((show) => {
+            show.style.opacity = "1"
+        })
+        titulo.style.opacity = "1"
+        contenedor.style.transition = "transform 1.5s ease-out"
+        contenedor.style.transform = "translateX(15vw)"
+        await delay(1500)
+        contenedor.style.transition = "transform 1s ease-in-out"
+        contenedor.style.transform = "translateX(0vw)"
+    }
+
+    inicio()
+</script>
+</html>
