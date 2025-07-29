@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    color:#fff;
 }
 
 body {
@@ -50,7 +51,7 @@ header div {
 }
 
 main {
-    background:#5EABD6 ;
+    background: #1A2A80;
 }
 
 .contenedor {
@@ -85,7 +86,8 @@ main {
 }
 
 .voley {
-    font-family: "Felipa", serif;
+/*     font-family: "Felipa", serif; */
+    font-family: "Permanent Marker", cursive;
     font-weight: 700;
     background: #0057B7;
 }
@@ -107,7 +109,8 @@ main {
 }
 
 .pinpon {
-    font-family: "DynaPuff", system-ui;
+/*     font-family: "DynaPuff", system-ui; */
+    font-family: "Permanent Marker", cursive;
     background:  #B22222;
 }
 
