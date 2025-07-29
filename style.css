@@ -11,7 +11,7 @@ body {
 
 header {
     padding: 1vh 5vw;
-    background: linear-gradient(to right bottom, #1A2A80 35%, #5EABD6 75% );
+    background: #1A2A80;
 }
 
 a {
@@ -50,7 +50,7 @@ header div {
 }
 
 main {
-    background: linear-gradient(200deg, #5EABD6 30%, #1A2A80 60% ) ;
+    background:#5EABD6 ;
 }
 
 .contenedor {
@@ -87,7 +87,7 @@ main {
 .voley {
     font-family: "Felipa", serif;
     font-weight: 700;
-    background:  linear-gradient(to bottom, #FFD700  25%,#0057B7 , #fff 80%);
+    background: #0057B7;
 }
 
 #show1 {
@@ -98,7 +98,7 @@ main {
 .futbol {
     color: #fff;
     font-family: "Permanent Marker", cursive;
-    background:  linear-gradient(to bottom, #000 25%,#2E8B57, #fff 80%);
+    background:  #2E8B57;
 }
 
 #show2 {
@@ -108,7 +108,7 @@ main {
 
 .pinpon {
     font-family: "DynaPuff", system-ui;
-    background:  linear-gradient(to bottom, #FF4500 20%,#1E3A8A, #fff 80%);
+    background:  #B22222;
 }
 
 #show3 {
