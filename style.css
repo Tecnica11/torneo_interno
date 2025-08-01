@@ -89,7 +89,7 @@ main {
 /*     font-family: "Felipa", serif; */
     font-family: "Permanent Marker", cursive;
     font-weight: 700;
-    background: #0057B7;
+    background:  linear-gradient(to bottom,#0057B7 , #022d5c 80%);
 }
 
 #show1 {
@@ -100,7 +100,7 @@ main {
 .futbol {
     color: #fff;
     font-family: "Permanent Marker", cursive;
-    background:  #2E8B57;
+    background:  linear-gradient(to bottom,#2E8B57, #164229 80%);
 }
 
 #show2 {
@@ -111,7 +111,7 @@ main {
 .pinpon {
 /*     font-family: "DynaPuff", system-ui; */
     font-family: "Permanent Marker", cursive;
-    background:  #B22222;
+    background:  linear-gradient(to bottom,#B22222, #3b0c0c 80%);
 }
 
 #show3 {
